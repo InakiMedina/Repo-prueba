@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image to CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #image {
+            display: inline-block;
+        }
+        .pixel {
+            width: 1px;
+            height: 1px;
+            float: left;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Import an image to convert to CSS</h2>
+    <input type="file" id="imgInput" accept="image/*">
+    <button onclick="convertImageToCSS()">Convert to CSS</button>
+    <div id="output">
+        <div id="image"></div>
+        <div id="original"></div>
+    </div>
+    <script src="helper.js"></script>
+</body>
+</html>
